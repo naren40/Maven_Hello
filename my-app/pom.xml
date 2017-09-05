@@ -49,17 +49,6 @@
     	<scope>test</scope>
     	 <type>maven-plugin</type>
     </dependency>
-    
-<extensions>
-		<!-- start - for deploying using webdav -->
-		<extension>
-			<groupId>org.apache.maven.wagon</groupId>
-			<artifactId>wagon-webdav</artifactId>
-			<version>1.0-beta-2</version>
-		</extension>
-		<!-- end - for deploying using webdav -->
-	</extensions>
-	
   </dependencies>
   <build>
     <plugins>
@@ -131,6 +120,15 @@
           </configuration>
       </plugin>
     </plugins>
+    <extensions>
+    		<!-- start - for deploying using webdav -->
+    		<extension>
+    			<groupId>org.apache.maven.wagon</groupId>
+    			<artifactId>wagon-webdav</artifactId>
+    			<version>1.0-beta-2</version>
+    		</extension>
+    		<!-- end - for deploying using webdav -->
+	</extensions>
   </build>
   <distributionManagement>
 		<!-- start - location where site is deployed - username/password for site.deployments in server.xml -->
