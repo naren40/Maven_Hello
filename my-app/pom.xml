@@ -127,7 +127,7 @@
 		<site>
 			<id>site.deployments</id>
 			<name>Site deployments</name>
-			<url>dav:http://http://192.168.0.20/sites/${artifactId}/</url>
+			<url>http://192.168.0.20/sites/${artifactId}/</url>
 		</site>
 		<!-- end - location where site is deployed - username/password for site.deployments in server.xml -->
 	</distributionManagement>
