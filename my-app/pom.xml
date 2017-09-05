@@ -50,6 +50,12 @@
     	 <type>maven-plugin</type>
     </dependency>
     
+                <dependency>
+                  <groupId>org.apache.maven.wagon</groupId>
+                  <artifactId>wagon-ssh</artifactId>
+                  <version>1.0</version>
+            </dependency>
+    
   </dependencies>
   <build>
     <plugins>
